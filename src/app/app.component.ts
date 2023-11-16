@@ -18,8 +18,6 @@ export class AppComponent {
 
     this.http.get(url).subscribe((data: any) => {
       this.searchResults = data.Search.slice(0, 3);
-      console.log('*********Movie*******');
-      console.log(this.searchResults);
     });
   };
 
